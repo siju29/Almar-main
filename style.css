@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fbf8f8;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}                   
+
+/*clases generales*/
+
+.hidden {
+  visibility: hidden;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+/* fin de clases generales */
+
+.index,
+.reservas{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+ .solicitudes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.headerSolicitudes{
+  grid-area: 1 / 1 / 2 / 5;
+}
+
+
+header {
+  font-size: large;
+  text-align: center;
+  align-items: flex-start;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.nav {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
+a {
+  color: #3e54a4;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #ffd3d3;
+}
+
+.logoHeader {
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
+  top: 0;
+}
+
+/* fin de header */
+
+/* inicio carousel */
+
+.carousel-inner {
+  text-align: center;
+  margin: 3rem 0;
+  grid-area: 2 / 1 / 3 / 4;
+}
+
+.carousel-item img{
+   height: 500px;
+   object-fit: cover;
+}
+
+
+
+
+/* inicio secciones */
+
+.fotoSection {
+  object-fit: contain;
+  height: 300px;
+  width: 70%;
+}
+
+.fotoSection:hover {
+  transform: scale(1.2, 1.2);
+  z-index: 50;
+  object-fit: contain;
+}
+
+.first {
+  padding: 25px 0;
+  grid-column: 1 / span 2;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  grid-area: 3 / 1 / 4 / 4;
+}
+
+.second {
+  padding: 25px 0;
+  grid-area: 4 / 1 / 5 / 4;
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+}
+
+.third {
+  padding: 25px 0;
+  grid-area: 5 / 1 / 6 / 4;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.four {
+  padding: 25px 0;
+  grid-area: 6 / 1 / 7 / 4;
+  display: flex;
+  flex-flow: row-reverse;
+  align-items: center;
+}
+
+.parrafop {
+  width: 600px;
+  margin: 73px 40px;
+  color: #8a9fd5;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h3{
+  color:#ff9a9a;
+  text-decoration: sodd;
+  text-align: center;
+  font-family: 'Bangers', cursive;
+}
+
+/* fin de secciones */
+
+/* inicio footer */
+
+footer {
+  padding-top: 25px;
+  grid-area: 7 / 1 / 8 / 4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.piePagina ul {
+  list-style-type: none;
+}
+
+.piePagina h4 {
+  color: #006ca4;
+  margin-bottom: 10%;
+  text-align: center;
+}
+.piePagina p,
+.piePagina ul {
+  margin-bottom: 5%;
+  color: #8a9fd5;
+  margin-left: 0;
+  padding: 0;
+  font-size: medium;
+}
+
+.mapouter {
+  text-align: center;
+}
+
+.mapouter iframe{
+  width: 100%;
+}
+
+
+.redes {
+  text-align: center;
+}
+
+.redes a {
+  padding: 5%;
+  display: inline-flex;
+}
+
+.redes img {
+  object-fit: cover;
+  height: 40px;
+}
+
+/* inicio reservas  */
+.sectionContainer {
+  min-height: 200px;
+  padding: 100px 50px;
+}
+
+.horarios {
+  text-align: center;
+}
+.horarios ul {
+  list-style-type: none;
+  color: #8a9fd5;
+  font-size: 20px;
+}
+
+.titulo {
+  color: #ff9a9a;
+  margin: 20px 0;
+  letter-spacing: 5px;
+  margin-inline: 5px;
+  font-size: 25px;
+}
+
+.sectionContainer div {
+  width: 50%;
+  display: inline;
+  margin: 72px;
+}
+
+.sectionContainer img {
+  height: auto;
+  width: 600px;
+}
+
+/* inicio galeria */
+
+.galeriap {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);  
+  color:white;
+/* color: #ff9a9a; */
+  font-size: large;
+  padding: 0% 10%;
+  margin: 3%;
+  text-align: center;
+  
+}
+
+.imagenesGaleria {
+  text-align: center;
+}
+
+.fotoGaleria {
+  width: 600px;
+  height: 340px;
+  margin: 5px;
+  object-fit: cover;
+  transition: transform 2s;
+}
+
+.fotogaleria:hover{
+    transform: scale(1.2, 1.2);
+    object-fit: contain;
+}
+
+
+.galeriaVideo {
+  margin-bottom: 10px;
+}
+
+/* fin de galeria */
+
+/* inicio de solicitudes */
+
+.caja {
+  width: 40%;
+  height: 500px;
+
+}
+
+.fotoForm{
+    object-fit: contain;
+    width: 100%;
+    padding-left: 10%; 
+    margin-top: 15%;
+  }
+
+
+.formContacto{
+  margin-top: 10%;
+
+}
+
+.formConsulta{
+  margin-top: 40%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+  color: #3e54a4;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  margin-top: 10px;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+textarea {
+  vertical-align: top;
+
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: 0.5em;
+}
+
+.radio {
+  width: 50px;
+}
+
+.opcion {
+  margin-top: 10px;
+  color: #3e54a4;
+}
+
+.boton {
+  color: #3e54a4;
+}
+
+.sectionContainerGrid {
+  grid-column: 1/4;
+  display: grid;
+  margin: 50px 10%;
+  grid-auto-columns: auto auto;
+}
+
+.sectionContainerGrid .horarios {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.sectionContainerGrid .foto {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav li {
+    display: block;
+    font-size: 20px;
+    padding: 5px;
+    border-bottom: 1px solid #0174aa;
+  }
+ 
+  .active {
+    background-color: #0174aa;
+  }
+  .active a {
+    color: white;
+  }
+  .first,
+  .second,
+  .third,
+  .four {
+    display: block;
+  }
+  .piePagina {
+    display: block;
+    width: 100%;
+  }
+  footer {
+    padding: 53px;
+  }
+
+   .parrafop {
+    width: auto;
+  }
+   .fotoSection {
+    width: 100%;
+  }
+
+  .sectionContainerGrid .foto,
+  .sectionContainerGrid .horarios {
+    grid-area: auto;
+    grid-column: 1/3;
+    margin-top: 20px;
+  }
+
+  .sectionContainerGrid .foto .fotoSection {
+    width: 100%;
+    float: left;
+  }
+}
+
+.FormTrabajo{
+  margin-top: 40px;
+}

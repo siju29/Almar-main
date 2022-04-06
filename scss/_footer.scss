@@ -1,0 +1,52 @@
+footer {
+  padding-top: 25px;
+  grid-area: 7 / 1 / 8 / 4;
+  @extend %flexFooter;
+
+  .piePagina {
+    ul {
+      list-style-type: none;
+    }
+
+    h4 {
+      color: map-get($colores,quinto);
+      margin-bottom: 10%;
+      text-align: center;
+    }
+
+    p,
+    ul {
+      margin-bottom: 5%;
+      color: map-get($colores, tercero);
+      margin-left: 0;
+      padding: 0;
+      font-size: medium;
+    }
+  }
+
+  .mapouter {
+    text-align: center;
+
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .redes {
+    text-align: center;
+
+    a {
+      padding: 5%;
+      &:hover{
+        color:map-get($colores,secundario);
+      }
+    }
+
+    img {
+      object-fit: cover;
+      height: 40px;
+    }
+  }
+
+
+}

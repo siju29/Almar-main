@@ -1,0 +1,4 @@
+Para el sitio agregué descripcion en los html segun el sitio
+Agregué tambien las palabras clave para cada html segun su temática 
+Los titulos de cada html tambien están modificados segun su tematica 
+Tiene ya el site map en el footer de cada html

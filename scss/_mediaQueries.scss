@@ -1,0 +1,53 @@
+@media only screen and (max-width: 768px){
+    .nav li{
+       display: block;
+       font-size: 20px;
+       padding: 5px;
+       border-bottom: 1px solid #0174aa;
+   
+       .active{
+           background-color: #0174aa;
+   
+           & a {
+               color: white;
+           }
+       }
+   
+    }
+   
+    .first,second,third,four{
+       display: block;
+   
+       .piePagina{
+           display: block;
+           width: 100%;
+       }
+    }
+   
+    .footer{
+       padding: 53px;
+    }
+   
+    .parrafop{
+       width: auto;
+    }
+   
+    .fotoSection{
+       width: 100%;
+    }
+   
+    .sectionContainerGrid{
+        .foto, horarios{
+           grid-area: auto;
+           grid-column: 1/3;
+           margin-top: 20px;
+        
+       }
+   
+       .foto, fotoSection{
+           width: 100%;
+           float: left;
+       }
+   
+    }
+   }

@@ -1,0 +1,34 @@
+.sectionContainer{
+    min-height: 200px;
+    padding: 100px 50px;
+
+    div{
+        width: 50%;
+        display: inline;
+        margin: 72px;
+    }
+
+    img{
+        height: auto;
+        width: 600px;
+    }
+
+}
+
+.horarios{
+    text-align: center;
+
+    ul{
+        list-style-type: none;
+        color: #8a9fd5;
+        font-size: 20px;
+    }
+}
+
+.titulo{
+    color: #ff9a9a;
+    margin: 20px 0;
+    letter-spacing: 5px;
+    margin-inline: 5px;
+    font-size: 25px;
+}

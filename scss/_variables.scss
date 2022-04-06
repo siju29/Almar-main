@@ -1,0 +1,47 @@
+$colorFondo:#fbf8f8;
+
+/*Extend*/
+
+
+%flexFooter{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+%AlignFooter{
+    align-items:center;
+}
+
+%flexRow{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+/* Mixin */ 
+
+@mixin flexBox ($flex-flow){
+    display: flex;
+    flex-flow: $flex-flow;
+    align-items: center;
+}
+
+@mixin  mediaQuery ($pixels) {
+    @media only screen and (max-width:$pixels) {
+        @content
+    }
+}
+
+/*map*/
+
+$colores:(
+    primario: #3e54a4,
+    secundario: #ffd3d3,
+    tercero: #8a9fd5,
+    cuarto: #ff9a9a,
+    quinto: #006ca4,
+    sexto: #8EC5FC,
+);
+
+
+
